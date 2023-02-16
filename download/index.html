@@ -1,6 +1,11 @@
 <input type="text" id="ipt" placeholder="enter download source address"/>
+<br/>
 <button id="btn">download</button>
+<br/>
 <a id="msg"></a>
+<p id="st"></p>
+<br/>
+
 <script>
 onerror=function (e){
 alert(e+"")
@@ -9,12 +14,12 @@ addEventListener("error", onerror);
 btn.onclick = function (){
 var src = "https://wim.cyclic.app/"+encodeURI(ipt.value.trim());
 fetch (src)
-.then(function (e){return e.blob()})
+.then(function (e){st.innerText="status: "+JSON.stringify(e);return e.blob()})
 .then(function (e){return URL.createObjectURL(e)})
 .then(function (e){
 msg.href=e
 msg.download=src.substring(0,9)
-msg.innerText=src
+msg.innerText=ipt.value
 })
 .catch(onerror)
 }
