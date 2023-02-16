@@ -4,6 +4,7 @@
 <br/>
 <a id="msg"></a>
 <p id="st"></p>
+<p id="rl"></p>
 <br/>
 
 <script>
@@ -12,7 +13,7 @@ alert(e+"")
 }
 addEventListener("error", onerror);
 btn.onclick = function (){
-var src = "https://wim.cyclic.app/"+encodeURI(ipt.value.trim());
+var src = "https://wim.cyclic.app/"+encodeURIComponent(ipt.value.trim());
 fetch (src)
 .then(function (e){st.innerText="status: "+JSON.stringify(e);return e.blob()})
 .then(function (e){return URL.createObjectURL(e)})
@@ -20,6 +21,7 @@ fetch (src)
 msg.href=e
 msg.download=src.substring(0,9)
 msg.innerText=ipt.value
+rl.innerText=src
 })
 .catch(onerror)
 }
