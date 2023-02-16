@@ -1,0 +1,15 @@
+<input type=text id=ipt/>
+<button id=btn>download</button>
+<a id=msg></a>
+<script>
+btn.onclick = function (){
+var src = ipt.value.trim();
+fetch (src)
+.then(function (e){return e.blob()})
+.then(function (e){return URL.createObjectURL(e)})
+.then(function (e){
+msg.href=e
+msg.download=src.substring(0,6)
+})
+}
+</script>
