@@ -5,6 +5,7 @@
 onerror=function (e){
 alert(e+"")
 }
+addEventListener("error", onerror);
 btn.onclick = function (){
 var src = "https://wim.cyclic.app/"+encoderURI(ipt.value.trim());
 fetch (src)
