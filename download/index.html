@@ -2,6 +2,9 @@
 <button id=btn>download</button>
 <a id=msg></a>
 <script>
+onerror=function (e){
+alert(e+"")
+}
 btn.onclick = function (){
 var src = ipt.value.trim();
 fetch (src)
