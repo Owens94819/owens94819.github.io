@@ -1,4 +1,4 @@
-<input type="text" id="ipt" placeholder="url"/>
+<input type="text" id="ipt" placeholder="enter download source address"/>
 <button id="btn">download</button>
 <a id="msg"></a>
 <script>
@@ -7,13 +7,14 @@ alert(e+"")
 }
 addEventListener("error", onerror);
 btn.onclick = function (){
-var src = "https://wim.cyclic.app/"+encoderURI(ipt.value.trim());
+var src = "https://wim.cyclic.app/"+encodeURI(ipt.value.trim());
 fetch (src)
 .then(function (e){return e.blob()})
 .then(function (e){return URL.createObjectURL(e)})
 .then(function (e){
 msg.href=e
-msg.download=src.substring(0,6)
+msg.download=src.substring(0,9)
+msg.innerText=src
 })
 .catch(onerror)
 }
