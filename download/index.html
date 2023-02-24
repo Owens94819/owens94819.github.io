@@ -13,14 +13,14 @@ alert(e+"")
 }
 addEventListener("error", onerror);
 btn.onclick = function (){
-var src = "https://wim.cyclic.app/"+encodeURIComponent(ipt.value.trim());
+var src = "https://wim.cyclic.app/anti-cors/"+encodeURIComponent(ipt.value.trim());
 fetch (src)
 .then(function (e){st.innerText="status: "+JSON.stringify(e.headers);return e.blob()})
 .then(function (e){return URL.createObjectURL(e)})
 .then(function (e){
 msg.href=e
 msg.download=src.substring(0,9)
-msg.innerText=ipt.value
+msg.innerText="SAVE: "+ipt.value
 rl.innerText=src
 })
 .catch(onerror)
