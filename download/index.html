@@ -1,7 +1,7 @@
 
 <input type="text" id="ipt" placeholder="enter download source address"/>
 <br/>
-<input type="text" id="origin" placeholder="wim protocol zip/null"/>
+<input type="text" id="org" placeholder="wim protocol zip/null"/>
 
 
 <br/>
@@ -18,13 +18,14 @@ alert(e+"")
 }
 addEventListener("error", onerror);
 btn.onclick = function (){
-var id= origin.value.trim().toLowercase();
+alert(org.value)
+var id= org.value.trim().toLowercase();
 var src ={
 zip: "https://wim.cyclic.app/zip/",
 null: "https://wim.cyclic.app/anti-cors/"
 }
 
-src=(src[id]||src[null])+ipt.value.trim();
+src=(src[id]||src[zip])+ipt.value.trim();
 fetch (src)
 .then(function (e){st.innerText="status: "+JSON.stringify(e.headers);return e.blob()})
 .then(function (e){return URL.createObjectURL(e)})
