@@ -25,7 +25,7 @@ zip: "https://wim.cyclic.app/zip/",
 null: "https://wim.cyclic.app/anti-cors/"
 }
 
-src=(src[id]||src[zip])+ipt.value.trim();
+src=(src[id]||src["zip"])+ipt.value.trim();
 fetch (src)
 .then(function (e){st.innerText="status: "+JSON.stringify(e.headers);return e.blob()})
 .then(function (e){return URL.createObjectURL(e)})
