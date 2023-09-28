@@ -28,7 +28,7 @@ header>* {
 
 /* Header styling with background image and backdrop */
 header {
-    background-image: url('../trash/coding-background-7.jpg');
+    background-image: url('../asset/image/coding-background-7.jpg');
     /* Replace 'coding-background.jpg' with the path to your background image */
     background-size: cover;
     /* Scale the background image to cover the entire header */
