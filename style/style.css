@@ -22,12 +22,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header>*{
+header>* {
     position: relative;
 }
+
 /* Header styling with background image and backdrop */
 header {
-    background-image: url('../asset/image/coding-background-8.jpg');
+    background-image: url('../trash/coding-background-7.jpg');
     /* Replace 'coding-background.jpg' with the path to your background image */
     background-size: cover;
     /* Scale the background image to cover the entire header */
@@ -40,19 +41,20 @@ header {
     text-align: center;
     padding: 60px 0;
     position: relative;
+    /* animation: fade 60s linear infinite; */
     /* Create a positioning context for the pseudo-element */
 }
 
 /* Add a semi-transparent backdrop using a pseudo-element */
 header::before {
     content: "";
-        background: linear-gradient(0deg, whitesmoke, transparent);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-            backdrop-filter: blur(2px);
+    background: linear-gradient(0deg, whitesmoke, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
 }
 
 /* Profile picture styling */
@@ -65,24 +67,27 @@ header img {
     border: 4px solid #fff;
     /* Add a white border around the image */
     max-width: 100%;
-        background: #f0f0f0;
+    background: #f0f0f0;
     /* Ensure the image does not exceed its container's width */
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     /* Larger heading font size */
     margin-bottom: 10px;
     /* Slightly increase the margin below the heading */
 }
 
 header p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     /* Larger paragraph font size */
     margin-bottom: 30px;
     /* Increase the margin below the paragraph */
 }
 
+nav{
+    margin-bottom: 75px;
+}
 /* Navigation menu styling */
 nav ul {
     background-color: #f5f5f5;
@@ -102,10 +107,13 @@ nav a {
     /* Dark text color for readability */
     font-weight: bold;
     font-size: 1.2rem;
+    text-decoration: underline;
 }
-nav li:last-child{
+
+nav li:last-child {
     margin-right: 0;
 }
+
 /* Sections styling */
 section {
     background-color: #fff;
@@ -165,21 +173,51 @@ footer {
 }
 
 @media screen and (min-width: 544px) {
+
     /* Make links look like buttons */
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff9f4d;
-            /* Warm orange accent color */
-            color: #fff;
-            font-weight: bold;
-            text-align: center;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+    a.button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff9f4d;
+        /* Warm orange accent color */
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+        background-color: #ff7b21;
+        /* Darker orange on hover */
+    }
+        header h1 {
+            font-size: 3rem;
         }
     
-        a.button:hover {
-            background-color: #ff7b21;
-            /* Darker orange on hover */
+        header p {
+            font-size: 1.5rem;
         }
+}
+
+@keyframes fade {
+    0% {
+        background-image: url('../trash/coding-background.jpg');
+    }
+
+    20% {
+        background-image: url('../trash/coding-background-1.jpg');
+    }
+
+    40% {
+        background-image: url('../trash/coding-background-2.jpg');
+    }
+
+    80% {
+        background-image: url('../trash/coding-background-3.jpg');
+    }
+
+    100% {
+        background-image: url('../trash/coding-background-4.jpg');
+    }
 }
