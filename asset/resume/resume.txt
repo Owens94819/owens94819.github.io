@@ -1,0 +1,42 @@
+Akpede Owens: Full Stack Developer
+
+About Me:
+I'm Akpede Owens, a passionate Full Stack Developer from Nigeria with a strong marketing background.
+ I specialize in JavaScript, PHP, and creating impactful digital experiences.
+  I also have expertise in React, a JavaScript library for building user interfaces.
+
+Skills:
+- JavaScript, HTML, CSS
+- React, Vue.js
+- PHP, SQL, Java
+- Node.js, Ruby on Rails
+- Regular Expressions (RegEx)
+
+Projects:
+You can explore my portfolio, which showcases all my projects, by visiting:
+https://owens94819.github.io/#projects
+
+Tools & Software I'm Proficient In:
+- Git & GitHub
+- Android Studio
+- Unity Game Engine
+- Figma
+- Visual Studio Code (VSCode)
+- WePage
+- Firebase
+- Google Cloud Console
+- HostPapa
+- phpMyAdmin
+- Font Awesome
+- Linux & Windows
+- Stack Overflow
+- Control Panel (cPanel)
+
+Contact:
+- Email: owens94819@gmail.com
+- GitHub: github.com/Owens94819
+- Facebook: facebook.com/owens94819.me
+- Whatsapp: 2348073217962
+- Phone: +2348073217962, +2348104992656
+
+© 2023 Akpede Owens
