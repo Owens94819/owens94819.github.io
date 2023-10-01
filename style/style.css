@@ -31,7 +31,9 @@ a {
 body {
     background-color: #f5f5f5;
     /* Light gray background for a warm feel */
-    color: #333;
+    /* color: #333; */
+    color: #5a5a5a;
+    /* color: #505050; */
     /* Dark text color for readability */
     /* font-family: Arial, sans-serif; */
     /* font-family: 'Open Sans', sans-serif; */
@@ -52,7 +54,6 @@ header {
     /* Prevent the background image from repeating */
     background-position: center center;
     /* Center the background image */
-    color: #333;
     /* Dark text color for readability */
     text-align: center;
     padding: 60px 0;
@@ -206,7 +207,7 @@ footer {
         padding: 10px 20px;
         background-color: #ff9f4d;
         /* Warm orange accent color */
-        color: #fff;
+        color: white;
         font-weight: bold;
         text-align: center;
         border-radius: 5px;
