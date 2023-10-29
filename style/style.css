@@ -46,7 +46,8 @@ header>* {
 
 /* Header styling with background image and backdrop */
 header {
-    background-image: url('../asset/image/coding-background-7.jpg');
+    background-image: url('../asset/image/coding-background-7 (200).jpg');
+    /* background-image: url('../asset/image/coding-background-7.jpg'); */
     /* Replace 'coding-background.jpg' with the path to your background image */
     background-size: cover;
     /* Scale the background image to cover the entire header */
@@ -71,7 +72,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 }
 
 /* Profile picture styling */
@@ -246,5 +247,23 @@ footer {
 
     100% {
         background-image: url('../trash/coding-background-4.jpg');
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    header {
+        background-image: url('../asset/image/coding-background-7 (400).jpg');
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    header {
+        background-image: url('../asset/image/coding-background-7 (700).jpg');
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        background-image: url('../asset/image/coding-background-7.jpg');
     }
 }
