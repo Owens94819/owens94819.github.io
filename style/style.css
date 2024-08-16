@@ -76,17 +76,25 @@ header::before {
 }
 
 /* Profile picture styling */
-header img {
+header .profile  img{
+    position: absolute;
+    top: 74%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    zoom: 1.5;
+}
+header .profile {
     display: block;
     margin: 0 auto 20px;
-    /* Center the image and add space below */
     border-radius: 50%;
-    /* Make the image round */
-    border: 4px solid white;
-    /* Add a white border around the image */
+    border: 1px solid #cacaca;
     max-width: 100%;
     background: #f0f0f0;
-    /* Ensure the image does not exceed its container's width */
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 3px 2px #595959;
 }
 
 header h1 {
@@ -112,13 +120,18 @@ nav{
 /* Navigation menu styling */
 nav ul {
     /* Light gray background for navigation menu */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
     text-align: center;
     padding: 10px 0;
 }
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 nav a {
@@ -128,6 +141,7 @@ nav a {
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: underline;
+    text-decoration-thickness: 4px;
 }
 
 nav li:last-child {
@@ -140,14 +154,35 @@ section {
     /* White background for sections */
     padding: 40px;
     /* Increase padding for sections */
-    margin: 20px;
+    /* margin: 20px; */
     border-radius: 5px;
     /* Rounded corners for sections */
     box-shadow: 1px 2px 2px -1.5px #939393;
     /* Subtle box shadow */
+    
 }
-section>ul{
+.wrapper{
     /* background: inherit; */
+    padding-bottom: 100px;
+    --grid-size: 360px;
+                    --width: var(--grid-size);
+                    /* --height: var(--width); */
+                    --max-columns: 3;
+                    --grid-gutter: 35px;
+                    display: grid;
+                    grid-column-gap: var(--grid-gutter);
+                    grid-row-gap: var(--grid-gutter);
+                    grid-template-columns: repeat(auto-fill, var(--width));
+                    justify-content: center;
+                    margin: auto;
+                    width: 100%;
+                    max-width: calc(var(--width)* var(--max-columns) + var(--grid-gutter)* var(--max-columns));
+
+}
+.wrapper>section{
+    grid-column-start: auto;
+    grid-row-start: auto;
+    height: fit-content;
 }
 
 section h2 {
@@ -181,6 +216,66 @@ footer {
 }
 
 
+/* Specific styles for sections */
+/* #about, #skills {
+    grid-column: span 1;
+}
+
+#projects {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#tools, #contact {
+    grid-column: span 1;
+} */
+
+/* Order the sections */
+#about {
+    order: 1;
+}
+
+#skills {
+    order: 2;
+}
+
+#projects {
+    order: 3;
+}
+
+#technologies {
+    order: 4;
+}
+
+#contact {
+    order: 5;
+    /* align-self: start; Move it up */
+}
+
+@media (min-width: 755px) {
+    #projects {
+        /* order: 4; */
+            grid-column: span 2;
+    }
+    
+    #technologies {
+        /* order: 3; */
+    }
+}
+@media (min-width: 1171px) {
+    #contact {
+        order: 2;
+    }
+    #projects {
+        /* order: 4; */
+            grid-column: span 1;
+    }
+    
+    #technologies {
+        /* order: 3; */
+        grid-column: span 2;
+    }
+}
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
 
@@ -193,7 +288,7 @@ footer {
     nav li {
         display: inline;
         /* Display menu items inline on smaller screens */
-        margin-right: 20px;
+        /* margin-right: 20px; */
         /* Add margin between menu items */
         margin-bottom: 0;
         /* Remove margin between menu items */

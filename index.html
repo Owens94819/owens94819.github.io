@@ -7,6 +7,7 @@
     <title>Akpede Owens - Portfolio</title>
     <!-- Link to your CSS files -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- Uncomment if needed -->
     <!-- <link rel="stylesheet" href="style/font.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 </head>
@@ -15,9 +16,11 @@
 
     <!-- Header Section -->
     <header>
-        <img src="asset/image/profile.jpg" alt="my profile" width="150" height="150">
+        <div class="profile">
+        <img src="asset/image/profile-me.jpg" alt="Profile of Akpede Owens" width="165" height="220">
+        </div>
         <h1>Akpede Owens</h1>
-        <p>A Full Stack Developer</p>
+        <p>Full Stack Developer</p>
     </header>
 
     <!-- Navigation Menu -->
@@ -31,14 +34,13 @@
         </ul>
     </nav>
 
-    <div class="wrapper">
+    <main class="wrapper">
         <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
             <p>Hello, I'm Akpede Owens, a tech enthusiast and full-time JavaScript and PHP expert from Nigeria. With a
                 strong foundation in marketing, I blend technology and creativity to craft impactful digital
-                experiences. My
-                passion lies in the convergence of innovation and practical solutions.</p>
+                experiences. My passion lies in the convergence of innovation and practical solutions.</p>
         </section>
 
         <!-- Skills Section -->
@@ -53,7 +55,6 @@
                 <li>
                     <a href="https://www.php.net/">PHP</a>,
                     <a href="https://dev.mysql.com/doc/">MySQL</a>,
-                    <!-- Fixed typo "SQL" to "MySQL" -->
                     <a href="https://www.java.com/">Java</a>
                 </li>
                 <li>
@@ -77,71 +78,63 @@
         <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
+            <div class="projects">
                 <!-- Project 1 -->
-                <li>
-                    <h3><a href="https://wepage.onrender.com/">we-page</a></h3>
+                <div class="project">
+                    <h3><a href="https://whatcolour.web.app">WhatColour</a></h3>
+                    <p>An AI application that recommends color schemes based on prompts.</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Node.js, Gemini AI</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="project">
+                    <h3><a href="https://we-quiz.web.app">We-Quiz</a></h3>
+                    <p>A quiz application where students can compete or challenge others across the world.</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, XJSX, Node.js</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="project">
+                    <h3><a href="https://wepage.onrender.com/">We-Page</a></h3>
                     <p>An application for building and designing portfolios and blogs.</p>
                     <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Node.js, Firebase, GitHub API</p>
-                </li>
-                <!-- Project 2 -->
-                <li>
-                    <h3><a href="https://we-quiz.web.app">we-quiz</a></h3>
-                    <p>A quiz application where student can compete or challenge other student across the world.</p>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, XJSX, Node.js</p>
-                </li>
-
-                <!-- Project 3 -->
-                <li>
-                    <h3><a href="https://we-movie.web.app">we-movie</a></h3>
+                </div>
+                <!-- Project 4 -->
+                <div class="project">
+                    <h3><a href="https://we-movie.web.app">We-Movie</a></h3>
                     <p>A movie download application with no ads.</p>
                     <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Node.js, XJSX</p>
-                </li>
-
-                <!-- Project 4 -->
-                <li>
-                    <h3><a href="https://ioc.indivice.live">ioc.indivice.live</a></h3>
+                </div>
+                <!-- Project 5 -->
+                <div class="project">
+                    <h3><a href="https://ioc.indivice.live">IOC Indivice</a></h3>
                     <p>An open-source community project for developers.</p>
                     <p><strong>Technologies Used:</strong> Astro.js, PostgreSQL, Git</p>
-                </li>
-
-                <!-- Project 5 -->
-                <li>
+                </div>
+                <!-- Project 6 -->
+                <div class="project">
                     <h3><a href="https://github.com/Owens94819/XJSX">XJSX</a></h3>
                     <p>A JavaScript framework for simplifying HTML coding.</p>
                     <p><strong>Technologies Used:</strong> JavaScript, ECMAScript 3 (ES3)</p>
-                </li>
-
-                <!-- Project 6 -->
-                <li>
+                </div>
+                <!-- Project 7 -->
+                <div class="project">
                     <h3><a href="https://owens94819.github.io/RPS-simulation">RPS Simulation</a></h3>
                     <p>A rock-paper-scissors simulation.</p>
                     <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, ECMAScript 6 (ES6)</p>
-                </li>
-
-                <!-- Project 7 -->
-                <li>
-                    <h3><a href="https://owens94819.github.io/code-snap">Code Snap</a></h3>
-                    <p>Code Snap: Capture, Highlight, Share! Write and highlight code easily, snap a screenshot, and
-                        share
-                        it on your
-                        social media.</p>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Ace.js</p>
-                </li>
-
+                </div>
                 <!-- Project 8 -->
-                <li>
+                <div class="project">
+                    <h3><a href="https://owens94819.github.io/code-snap">Code Snap</a></h3>
+                    <p>Capture, highlight, and share code easily. Write and highlight code, snap a screenshot, and share
+                        it on your social media.</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Ace.js</p>
+                </div>
+                <!-- Project 9 -->
+                <div class="project">
                     <h3><a href="https://owens94819.github.io/canvas">Canvas</a></h3>
                     <p>An application for creating and designing postal cards and logos.</p>
                     <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
-                </li>
-                <!-- Project 8 -->
-                <li>
-                    <h3><a href="https://whatcolour.web.app">whatcolour</a></h3>
-                    <p>An AI application that recommends colour schemes base on prompt.</p>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Nodejs, Gemini Ai</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Technologies and Software Section -->
@@ -152,18 +145,15 @@
             <ul>
                 <li><i class="fab fa-git"></i> <a href="https://git-scm.com/">Git</a> - Version control system</li>
                 <li><i class="fab fa-github"></i> <a href="https://github.com/">GitHub</a> - Web-based platform for
-                    version
-                    control and collaboration</li>
+                    version control and collaboration</li>
                 <li><i class="fab fa-android"></i> <a href="https://developer.android.com/studio">Android Studio</a> -
                     Android app development IDE</li>
                 <li><i class="fab fa-unity"></i> <a href="https://unity.com/">Unity Game Engine</a> - Game development
-                    platform
-                </li>
+                    platform</li>
                 <li><i class="fab fa-figma"></i> <a href="https://www.figma.com/">Figma</a> - Collaborative design tool
                 </li>
                 <li><i class="fas fa-code"></i> <a href="https://code.visualstudio.com/">Visual Studio Code (VSCode)</a>
-                    -
-                    Code editor</li>
+                    - Code editor</li>
                 <li><i class="fas fa-laptop"></i> <a href="https://wepage.cyclic.app/">WePage</a> - Website builder</li>
                 <li><i class="fas fa-fire"></i> <a href="https://firebase.google.com/">Firebase</a> - Mobile and web
                     application development platform</li>
@@ -173,42 +163,30 @@
                 </li>
                 <li><i class="fas fa-database"></i> <a href="https://www.phpmyadmin.net/">phpMyAdmin</a> - Database
                     management tool</li>
-                <li><i class="fas fa-font"></i> <a href="https://fontawesome.com/">Font Awesome</a> - Icon library and
-                    toolkit</li>
-                <li><i class="fab fa-linux"></i> <a href="https://www.linux.org/">Linux</a> - Open-source operating
-                    system
+                <li><i class="fas fa-terminal"></i> <a href="https://hyper.is/">Hyper</a> - Terminal emulator</li>
+                <li><i class="fab fa-linux"></i> <a href="https://ubuntu.com/">Ubuntu Linux</a> - Open-source operating
+                    system</li>
+                <li><i class="fas fa-code-branch"></i> <a href="https://www.npmjs.com/">npm</a> - Node package manager
                 </li>
-                <li><i class="fab fa-windows"></i> <a href="https://www.microsoft.com/en-us/windows/">Windows</a> -
-                    Operating system</li>
-                <li><i class="fab fa-stack-overflow"></i> <a href="https://stackoverflow.com/">Stack Overflow</a> -
-                    Developer community and Q&A platform</li>
-                <li><i class="fas fa-cogs"></i> <a href="https://cpanel.net/">Control Panel (cPanel)</a> - Web hosting
-                    control panel</li>
+                <li><i class="fas fa-cog"></i> <a href="https://developer.android.com/studio">Android Studio</a> -
+                    Android app development IDE</li>
             </ul>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me via email at <a href="mailto:owens94819@gmail.com"><i class="fas fa-envelope"></i>
-                    owens94819@gmail.com</a>.</p>
-            <p>Connect with me on <a href="https://github.com/Owens94819"><i class="fab fa-github"></i> GitHub</a> and
-                <a href="https://facebook.com/owens94819.me"><i class="fab fa-facebook"></i> Facebook</a>.
-            </p>
-            <p>Or give me a call at: <a href="tel:+2348073217962"><i class="fas fa-phone"></i> +2348073217962</a> or <a
-                    href="tel:+2348104992656"><i class="fas fa-phone"></i> +2348104992656</a></p>
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Email: <a href="mailto:owens94819@gmail.com">owens94819@gmail.com</a></li>
+                <li>Twitter: <a href="https://twitter.com/@OAkpede76592">Akpede Owens</a></li>
+                <li>GitHub: <a href="https://github.com/Owens94819">Owens94819</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/owens94819">Akpede Owens</a></li>
+            </ul>
         </section>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2023 Akpede Owens</p>
-    </footer>
-    <script type="text/javascript" src="https://asap.aidaxcarus.net/integration/general_integration"></script>
-    <script type="text/javascript">
-        AffTracker.setWebsiteUrl("https://owens94819.github.io");
-        AffTracker.generalClick("l8Y9bJZUzO");
-    </script>
+    </main>
+  <footer>
+    "Roses are red Violence are blue documentations is for noobs"
+  </footer>
 </body>
 
 </html>
