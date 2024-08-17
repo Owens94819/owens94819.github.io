@@ -291,6 +291,7 @@ footer {
         /* margin-right: 20px; */
         /* Add margin between menu items */
         margin-bottom: 0;
+        padding: 3px;
         /* Remove margin between menu items */
     }
 }
