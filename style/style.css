@@ -162,6 +162,7 @@ section {
     
 }
 .wrapper{
+    overflow: hidden;
     /* background: inherit; */
     padding-bottom: 100px;
     --grid-size: 360px;
