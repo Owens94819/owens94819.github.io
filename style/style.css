@@ -257,11 +257,13 @@ footer {
     order: 5;
     /* align-self: start; Move it up */
 }
-
+#resume{
+    order: 6;
+}
 @media (min-width: 755px) {
     #projects {
         /* order: 4; */
-            grid-column: span 2;
+            grid-column: span 1;
     }
     
     #technologies {
@@ -279,7 +281,7 @@ footer {
     
     #technologies {
         /* order: 3; */
-        grid-column: span 2;
+        /* grid-column: span 2; */
     }
 }
 /* Media query for smaller screens */
