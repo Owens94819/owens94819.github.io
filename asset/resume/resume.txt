@@ -1,43 +1,56 @@
-Akpede Owens: Full Stack Developer
+﻿Akpede Owens
+Passionate Full-Stack Developer | Transforming Ideas into Seamless Solutions | Crafting Code with Precision and Purpose
+	1 Ebhodaghe street, off uwagboe, off ugbowo street Eghor, Benin city, 
+Edo State, Nigeria
++2348073217962
+owens94819@gmail.com
+	EXPERIENCE
+Aidaxcarus, Benin City, Nigeria — Chief Technology Officer
+2023  - PRESENT
+As the Chief Technology Officer and a full-stack developer at Aidaxcarus, I spearhead the technology strategy, overseeing development projects and ensuring seamless integration of innovative solutions to meet business objectives.
+EDUCATION
+Praise College, Benin City, Nigeria— Secondary
+2014  - 2020
+FENOSA Rangers Academy, Benin City, Nigeria — Primary
+2005  - 2012
 
-About Me:
-I'm Akpede Owens, a passionate Full Stack Developer from Nigeria with a strong marketing background.
- I specialize in JavaScript, PHP, and creating impactful digital experiences.
-  I also have expertise in React, a JavaScript library for building user interfaces.
 
-Skills:
-- JavaScript, HTML, CSS
-- React, Vue.js
-- PHP, SQL, Java
-- Node.js, Ruby on Rails
-- Regular Expressions (RegEx)
+West African Senior Certificate in Education (WASSCE)
+2020
+PROJECTS
+WhatColour
+An AI application that recommends color schemes based on prompts.
+Technologies Used: HTML, CSS, JavaScript, Node.js, Gemini AI
+We-Page 
+An application for building and designing portfolios and blogs.
+Technologies Used: HTML, CSS, JavaScript, Node.js, Firebase, Github API
+We-Quiz 
+A quiz application where students can compete or challenge others across the world.
+Technologies Used: HTML, CSS, JavaScript, Node.js, XJSX
+XJSX 
+A JavaScript framework for simplifying HTML coding.
+Technologies Used:  JavaScript, ECMAScript 3 (ES3)
+Canvas
+An application for creating and designing postal cards and logos.
+Technologies Used:  HTML, CSS, JavaScript
+	SKILLS
 
-Projects:
-You can explore my portfolio, which showcases all my projects, by visiting:
-https://owens94819.github.io/#projects
 
-Tools & Software I'm Proficient In:
-- Git & GitHub
-- Android Studio
-- Unity Game Engine
-- Figma
-- Visual Studio Code (VSCode)
-- WePage
-- Firebase
-- Google Cloud Console
-- HostPapa
-- phpMyAdmin
-- Font Awesome
-- Linux & Windows
-- Stack Overflow
-- Control Panel (cPanel)
+Web Design/ Development (Full stack Developer), Graphics Design, Video
+editor, Proficiency in Microsoft Packages.
 
-Contact:
-- Portfolio: https://owens94819.github.io
-- Email: owens94819@gmail.com
-- GitHub: github.com/Owens94819
-- Facebook: facebook.com/owens94819.me
-- Whatsapp: 2348073217962
-- Phone: +2348073217962, +2348104992656
 
-© 2023 Akpede Owens
+PROGRAMMING LANGUAGES
+
+
+JavaScript, HTML, CSS, PHP, MySQL, Java, Bash, Ruby on Rails, Node.js, React, Vue.js, XJSX, C#, Regular Expressions (RegEx)
+AWARDS
+Earned the Project IDX User badge - Jul 25, 2024        
+Earned the Google Cloud Skills Boost badge - Jul 23, 2024                
+Earned the Google Cloud Innovator badge - Jul 23, 2024                
+Earned the Firebase Data Connect Private Preview Program badge - Jul 23, 2024                
+Earned the Building for tomorrow with the Gemini API badge - Jul 12, 2024
+
+
+LANGUAGES
+Fluent in both the English language and Nigerian local English.
